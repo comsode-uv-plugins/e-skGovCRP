@@ -51,6 +51,8 @@ public class SkGovCRP extends AbstractDpu<SkGovCRPConfig_V1> {
 
     private static final String PURL_URI = "http://purl.org/procurement/public-contracts#";
 
+    private static final String REFERENCE_URI = "http://reference.data.gov.uk/def/payment#";
+
     private static Map<String, Integer> keys = new HashMap<String, Integer>();
 
     private static URI inputUri = null;
@@ -139,7 +141,7 @@ public class SkGovCRP extends AbstractDpu<SkGovCRPConfig_V1> {
                     UUID uuid = UUID.randomUUID();
                     org.openrdf.model.URI uri = vf.createURI(BASE_URI + uuid.toString());
                     EntityBuilder eb = new EntityBuilder(uri, vf);
-                    eb.property(RDF.TYPE, vf.createURI(PURL_URI));
+                    eb.property(RDF.TYPE, vf.createURI(REFERENCE_URI + "Payment"));
                     eb.property(vf.createURI(BASE_URI + "linka-na-detail"), builder.build().toString());
 
                     eb = getDetails(projectDetailContent, eb, vf, httpclient);
