@@ -278,7 +278,7 @@ public class SkGovCRP extends AbstractDpu<SkGovCRPConfig_V1> {
                     URIBuilder prilohaLinkBuilder = new URIBuilder();
                     prilohaLinkBuilder.setHost(inputUri.getHost()).setScheme(inputUri.getScheme()).setPath(prilohaLink);
                     LOG.debug(prilohaLinkBuilder.build().toString());
-                    eb.property(vf.createURI(PURL_URI + "attachment"), prilohaLinkBuilder.build().toString());
+                    eb.property(vf.createURI(REFERENCE_URI + "Payment"), prilohaLinkBuilder.build().toString());
                 }
 
                 eb.property(vf.createURI(BASE_URI + key), value);
