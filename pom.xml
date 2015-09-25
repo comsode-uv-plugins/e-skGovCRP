@@ -11,7 +11,7 @@
 
 	<groupId>eu.comsode.plugins</groupId>
 	<artifactId>uv-e-skGovCRP</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>bundle</packaging>
 	<name>E-SkGovCRP</name>
 	<description>Extracts http://www.crp.gov.sk/5-sk/register-projektov/?page=0</description>
