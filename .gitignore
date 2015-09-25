@@ -37,3 +37,4 @@ bin/
 !/frontend/src/main/webapp/VAADIN/themes/UnifiedViewsTheme/
 build.bat
 eclipse.bat
+projects.txt
